@@ -22,22 +22,16 @@
 
                 <ImageView
                     android:id="@+id/photo"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
+                    android:layout_height="@dimen/detail_card_top_margin"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="112dp"
-                    android:background="@drawable/photo_background_protection" />
+                    android:scaleType="centerCrop"/>
 
             </FrameLayout>
 
             <com.example.xyzreader.ui.MaxWidthLinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:maxWidth="@dimen/detail_card_max_width"
                 android:background="#fff"
@@ -104,7 +98,6 @@
         android:contentDescription="@string/action_share"
         android:elevation="@dimen/fab_elevation"
         android:src="@drawable/ic_share"
-        android:background="@color/theme_accent"
         android:stateListAnimator="@anim/fab_state_list_anim" />
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>

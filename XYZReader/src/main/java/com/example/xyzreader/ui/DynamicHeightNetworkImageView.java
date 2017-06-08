@@ -6,7 +6,7 @@ import android.widget.ImageView;
 
 import com.android.volley.toolbox.NetworkImageView;
 
-public class DynamicHeightNetworkImageView extends android.support.v7.widget.AppCompatImageView {
+public class DynamicHeightNetworkImageView extends NetworkImageView {
     private float mAspectRatio = 1.5f;
 
     public DynamicHeightNetworkImageView(Context context) {
